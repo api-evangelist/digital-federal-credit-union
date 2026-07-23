@@ -1,0 +1,70 @@
+aid: digital-federal-credit-union
+name: DCU (Digital Federal Credit Union)
+review:
+  question: Does DCU (Digital Federal Credit Union) expose a public first-party developer API, developer portal, or downloadable API specifications?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Digital Federal Credit Union (DCU) publishes no public first-party
+    developer API and no developer portal. Probing developer.dcu.org returned
+    no site (connection failed, HTTP 000) and https://dcu.org/developers
+    resolved to the site's standard "page not available" not-found page
+    (soft 404). No API reference, no OpenAPI/Swagger, and no downloadable
+    machine-readable API artifacts are published anywhere on dcu.org. As a
+    not-for-profit, member-owned federal credit union regulated by the NCUA,
+    DCU participates in US open finance only indirectly: consumer-permissioned
+    account data is reached through third-party aggregators (Plaid, MX,
+    Finicity, Akoya) and its core banking provider, not through a
+    bank-operated API. No public FDX (Financial Data Exchange) membership or
+    conformant data-access API was found documented, and no stated CFPB
+    Section 1033 (Personal Financial Data Rights) data-access program was
+    published at the review date. There is no authentication model to
+    document because there is no first-party API surface. Note: DCU recently
+    merged with First Technology Federal Credit Union.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalProbed: developer.dcu.org (no site, HTTP 000); dcu.org/developers (soft 404)
+    downloadableOpenAPIorSwagger: false
+    apiReferenceDocumented: false
+    fdxParticipant: false
+    fdxNote: No public FDX participation documented; FDX spec is member-gated and not fabricated here.
+    section1033Posture: No published CFPB Section 1033 data-access program found.
+    aggregatorAccessOnly: true
+    aggregatorsNote: Consumer data access is aggregator-mediated (Plaid / MX / Finicity / Akoya) per typical US credit-union posture; not a first-party API.
+    authModel: none (no first-party API surface)
+    specProvenance: none harvested (no public specifications exist)
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public REST API is documented for third-party developers.
+    - protocol: FDX
+      documented: false
+      note: No documented FDX data-access API.
+sources:
+  - url: https://www.dcu.org
+    type: Website
+    note: Homepage. HTTP 200. Consumer/member banking site; no developer or API section in navigation or footer.
+  - url: https://dcu.org/developers
+    type: Probe
+    note: HTTP 200 but content is the site's standard "The page you requested is not available" not-found page (soft 404). No developer content.
+  - url: https://developer.dcu.org
+    type: Probe
+    note: HTTP 000 - no site resolves at this subdomain. No developer portal exists.
+  - url: https://www.dcu.org/dcu-support-center/privacy-practices.html
+    type: PrivacyPolicy
+    note: HTTP 200. Privacy practices page.
+  - url: https://www.dcu.org/dcu-support-center/terms-of-use.html
+    type: TermsOfService
+    note: HTTP 200. Terms of use page.
+  - url: https://www.dcu.org/about/newsroom.html
+    type: Blog
+    note: HTTP 200. Newsroom; no API or developer announcements.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No public API surface exists to catalog. apis[] is left empty and the
+    record is identity-only with verified website/legal/support/social
+    common links. No specifications were harvested because none are published.
