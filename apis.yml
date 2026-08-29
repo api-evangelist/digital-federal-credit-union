@@ -1,5 +1,8 @@
 aid: digital-federal-credit-union
 url: https://raw.githubusercontent.com/api-evangelist/digital-federal-credit-union/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This is an honest identity-only record: no public API surface exists to catalog."
 name: DCU (Digital Federal Credit Union)
 kind: company
 description: >-
