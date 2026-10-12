@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/digital-federal-credit-union/integrations
+- https://zapier.com/apps/dcu-digital-federal-credit-union/integrations
+- https://n8n.io/integrations/digital-federal-credit-union/
+- https://composio.dev/toolkits/digital-federal-credit-union
+- https://monid.ai/tools/digital-federal-credit-union
+checked:
+- https://composio.dev/toolkits/digital-federal-credit-union
+- https://monid.ai/tools/digital-federal-credit-union
+- https://n8n.io/integrations/digital-federal-credit-union/
+- https://zapier.com/apps/dcu-digital-federal-credit-union/integrations
+- https://zapier.com/apps/digital-federal-credit-union/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
