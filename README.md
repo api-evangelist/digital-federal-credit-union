@@ -1,4 +1,4 @@
-# DCU (Digital Federal Credit Union) (digital-federal-credit-union)
+# DCU (Digital Federal Credit Union)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,45 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Digital Federal Credit Union (DCU) is a not-for-profit, member-owned federal credit union headquartered in Marlborough, Massachusetts and regulated by the NCUA, with roughly 1.18 million members, 23 branches across Massachusetts and New Hampshire, and nationwide access via the Co-Op shared-branch and surcharge-free ATM networks. It has recently merged with First Technology Federal Credit Union.
+Digital Federal Credit Union (DCU) is a not-for-profit, member-owned federal credit union headquartered in Marlborough, Massachusetts and regulated by the National Credit Union Administration (NCUA), with roughly 1.18 million members, 23 branches across Massachusetts and New Hampshire, and nationwide access via the Co-Op shared-branch and surcharge-free ATM networks. It offers consumer and business banking, lending, mortgages, credit cards, and investment services, and has recently merged with First Technology Federal Credit Union. Like most US credit unions, DCU publishes NO public first-party developer API, developer portal, or downloadable OpenAPI/Swagger specifications; consumer-permissioned account data is reached only indirectly through third-party aggregators (Plaid, MX, Finicity, Akoya) and its core banking provider, and there is no publicly documented FDX participation or CFPB Section 1033 data-access program. This is an honest identity-only record: no public API surface exists to catalog.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/digital-federal-credit-union/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/digital-federal-credit-union/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Credit Union · Consumer Banking · Open Finance
 
-## Open Finance / API Posture
+## DCU (Digital Federal Credit Union) on APIs.io
 
-DCU publishes **no public first-party developer API**. There is no developer portal (`developer.dcu.org` does not resolve to a site; `dcu.org/developers` returns a not-found page), no public API reference, and no downloadable OpenAPI/Swagger specifications. Like most US credit unions, DCU's participation in open finance is **aggregator-mediated**: consumer-permissioned account data is reached indirectly through third-party data aggregators (Plaid, MX, Finicity, Akoya) and its core banking provider, rather than through a bank-operated API. No public FDX (Financial Data Exchange) participation and no stated CFPB Section 1033 data-access program were found documented at the review date.
+Everything profiled for DCU (Digital Federal Credit Union) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/digital-federal-credit-union/](https://apis.io/providers/digital-federal-credit-union/)** — or go straight to one of the APIs or properties below.
 
-This repository is therefore an honest identity-only record — there is no public API surface to catalog.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Financial Services
-- Banking
-- United States
-- Credit Union
-- Consumer Banking
-- Open Finance
-- Data Aggregation
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+- [Digital Federal Credit Union Domain Security](https://apis.io/security/digital-federal-credit-union/digital-federal-credit-union-domain-security/)
 
-## APIs
+## Where to find this API
 
-None. DCU exposes no public developer API. Consumer data access is available only through third-party aggregators.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.dcu.org)
-- [Terms of Use](https://www.dcu.org/dcu-support-center/terms-of-use.html)
-- [Privacy Practices](https://www.dcu.org/dcu-support-center/privacy-practices.html)
 - [Support](https://www.dcu.org/help.html)
-- [Newsroom / Blog](https://www.dcu.org/about/newsroom.html)
-- [LinkedIn](https://www.linkedin.com/company/dcu)
+- [Blog](https://www.dcu.org/about/newsroom.html)
+- [Terms of service](https://www.dcu.org/dcu-support-center/terms-of-use.html)
+- [Privacy policy](https://www.dcu.org/dcu-support-center/privacy-practices.html)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 3.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/digital-federal-credit-union/](https://apis.io/providers/digital-federal-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DCU (Digital Federal Credit Union): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/digital-federal-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
